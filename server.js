@@ -1,4 +1,8 @@
 var express = require("express");
+var pug = require("pug");
+
+
+
 
 var months = {
     0: "January",
@@ -16,6 +20,12 @@ var months = {
 };
 
 var app = express();
+app.set("view engine", "pug");
+
+
+app.get("/", function(req, res){
+    res.render("index");
+})
 
 app.get("/*", function(req, res){
     

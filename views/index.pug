@@ -1,0 +1,28 @@
+html
+  head
+    title Url Time Stamp Application
+    
+  body
+    div(class="container")
+        h1 Time Stamp Application
+        blockquote <b>How it works:</b>
+            ul I can pass a date or unix timestamp as a parameter and I will receive JSON response which includes the date passed and its unix timestamp equivalent.
+            
+        
+        h3 Example usage:
+        code 1. https://time-stamp-pkh1162.herokuapp.com/Oct 9 1990
+        br
+        code OR
+        br
+        code 2. https://time-stamp-pkh1162.herokuapp.com/655430400
+        
+        h3 Example output
+        code 1. {"unix":655430400,"natural":"October 9, 1990"}     
+        br
+        code 2. {"unix":655430400,"natural":"October 9, 1990"}
+        
+        h3 Short Urls
+        p If the inputted date/timestamp is not recognised, the output will be:
+        code {"unix":null,"natural":null}
+    
+    
